@@ -1,0 +1,17 @@
+<head>
+  <title>note manager</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+  <ul class="collections">
+    {{#each notes}}
+      {{> note}}
+    {{/each}}
+  </ul>
+</body>
+
+
+<template name="note">
+  <li class="collections-item">{{title}}</li>
+  </template>
